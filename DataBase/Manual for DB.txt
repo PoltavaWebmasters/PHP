@@ -2,6 +2,18 @@ DataBase Name = library_db
 username = root
 password = (пустое значение)
 
+
+Структура каталога Library 
+author - каталог с набором методов для таблицы атор
+book - каталог с набором методов для таблицы книг
+publishing_house - каталог с набором методов для таблицы издательств
+config - каталог с файлом конфигурации базы данных
+objects - каталог с перечнем основных обьектов - author.php
+                                                 book.php
+                                                 publishing_house.php
+
+
+
 Примеры запросов для таблицы книг
 
 library/book/read.php - чтение данных
