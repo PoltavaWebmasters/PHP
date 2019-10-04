@@ -36,7 +36,7 @@ class PublishingHouse{
         return $stmt;
 
     }
-
+    // Создание новой записи
     function create()
     {
         //Запрос для добавления записи

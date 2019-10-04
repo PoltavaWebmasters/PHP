@@ -1,3 +1,27 @@
 DataBase Name = library_db
 username = root
 password = (пустое значение)
+
+Примеры запросов для таблицы книг
+
+library/book/read.php - чтение данных
+
+library/book/create.php - создание новых / для проверки работоспособности использовалось приложение Postman , данные для отображения , удаления, изменеия вводились Body запроса в формате { 
+            "title": "Storm",
+            "author_id": "2",
+            "publishing_house_id": "3"
+         }
+
+library/book/delete.php - удаление книги по айди {
+                                                     "id" : "2"
+                                                  }
+
+library/book/update.php - обновление данных по айди {
+            "id" :   "1",
+            "title": "Civil War",
+            "author_id": "2",
+            "publishing_house_id": "1"
+        }
+
+library/book/read_one.php?id=2 - вывод данных об одной записи по ее айди
+

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Окт 04 2019 г., 12:14
+-- Время создания: Окт 04 2019 г., 12:52
 -- Версия сервера: 8.0.15
 -- Версия PHP: 7.3.9
 
@@ -61,8 +61,10 @@ CREATE TABLE `book` (
 --
 
 INSERT INTO `book` (`id`, `title`, `author_id`, `publishing_house_id`) VALUES
-(1, 'Civil War', 2, 1),
-(2, 'Cradle', 1, 1);
+(1, 'Civil War', 2, 4),
+(2, 'Cradle', 1, 1),
+(6, 'Storm', 2, 2),
+(7, 'Star Wars', 1, 4);
 
 -- --------------------------------------------------------
 
@@ -80,8 +82,9 @@ CREATE TABLE `publishing_house` (
 --
 
 INSERT INTO `publishing_house` (`id`, `title`) VALUES
-(1, 'UrkBook'),
-(2, 'BookLit');
+(1, 'ST'),
+(2, 'BookLit'),
+(4, 'River');
 
 --
 -- Индексы сохранённых таблиц
@@ -122,13 +125,13 @@ ALTER TABLE `author`
 -- AUTO_INCREMENT для таблицы `book`
 --
 ALTER TABLE `book`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `publishing_house`
 --
 ALTER TABLE `publishing_house`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
